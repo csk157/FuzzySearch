@@ -34,7 +34,7 @@ extend(FuzzySearch.prototype, /** @lends {FuzzySearch.prototype} */ {
         }
 
         // Debounce
-        var clock = (window.performance && window.performance.now) ? window.performance : Date;
+        var clock = Date;
         var timeout, cache;
         var count = 0, suppressed = false;
 

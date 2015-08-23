@@ -1350,7 +1350,7 @@ extend(FuzzySearch.prototype, /** @lends {FuzzySearch.prototype} */ {
      */
     search: function (query_string) {
 
-        var clock = (window.performance && window.performance.now) ? window.performance : Date;
+        var clock = Date;
         var time_start = clock.now();
         this.start_time = time_start;
         var options = this.options;
@@ -2678,7 +2678,7 @@ extend(FuzzySearch.prototype, /** @lends {FuzzySearch.prototype} */ {
         }
 
         // Debounce
-        var clock = (window.performance && window.performance.now) ? window.performance : Date;
+        var clock = Date;
         var timeout, cache;
         var count = 0, suppressed = false;
 
